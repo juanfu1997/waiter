@@ -1,0 +1,107 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.9",
+	"appid": "wx3cfc14fc914fc9b3",
+	"projectname": "%E6%8E%92%E9%98%9F%E5%B0%8Fwaiter",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "businessList",
+					"pathName": "pages/businessList/businessList",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "order",
+					"pathName": "pages/order/order",
+					"query": "id=0"
+				},
+				{
+					"id": -1,
+					"name": "orderdetails",
+					"pathName": "pages/orderDetails/orderDetails",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "busDetail",
+					"pathName": "pages/busDetail/busDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "orderList",
+					"pathName": "pages/orderList/orderList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "ranks",
+					"pathName": "pages/ranks/ranks",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/busDetail/busDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "waitGame",
+					"pathName": "pages/waitGame/waitGame",
+					"query": "id=0"
+				},
+				{
+					"id": 9,
+					"name": "shortJoke",
+					"pathName": "pages/shortJokes/shortJokes",
+					"query": "id=0"
+				},
+				{
+					"id": -1,
+					"name": "cartoon",
+					"pathName": "pages/cartoon/cartoon",
+					"query": "id=0"
+				}
+			]
+		}
+	}
+}

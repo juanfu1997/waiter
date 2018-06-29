@@ -1,0 +1,23 @@
+<view class="page">
+    <image class="bg" src="{{img}}indexBg.png" ></image>
+    
+    <image class="logo" src="{{img}}indexLogo.png" mode="widthFix"></image>
+    
+    <view class="btn_button">
+       <!--  <view class="classify" data-id="{{item.id}}" wx:for="{{classify}}" data-page="{{item.page}}" data-param="{{item.param}}" bindtap="goPage">{{item.name}}</view> -->
+        <image class="classifyImg" src="{{img}}{{item.src}}" wx:for="{{classify}}" mode="widthFix" data-id="{{item.id}}" data-page="{{item.page}}" data-param="{{item.param}}" bindtap="goPage"></image>
+    </view>
+    <view class="footer">
+        <view class="adminLogin" bindtap="showlogin">管理登录</view>
+        <view class="fansme">粉我把科技出品</view>
+    </view>
+    <!-- <view class="demo"></view> -->
+    <view class="login" hidden="{{showlogin}}">
+    	<view class="frame">
+    		<image src="{{img}}login.png" mode="widthFix"></image>
+    		<input class="userName" placeholder="用戶名" placeholder-style="text-align:center;color:#626262;" bindblur="saveUserName" />
+    		<input class="password" placeholder="密碼" placeholder-style="text-align:center;color:#626262;" bindblur="savePassword" />
+    		<view class="send" bindtap="send">登錄</view>
+    	</view>
+    </view>
+</view>

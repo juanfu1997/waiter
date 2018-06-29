@@ -1,0 +1,22 @@
+<import src="/dist/tabbar/index.wxml" />
+<template is="tabbar" data="{{..._tabbar_}}"></template>
+<view class="page">
+	<view class="order" wx:for="{{orderList}}">
+		<view class="order_tap">
+			<view>時間：</view>
+			<view class="order_time">1{{}}</view>
+			<view class="order_state">已預訂{{}}</view>
+		</view>
+		<view class="order_content">
+			<view class="order_info" wx:for="{{order_info}}">
+				<view class="info_type">{{item.type}}</view>
+				<view class="info_text">{{item.text}}</view>
+			</view>
+		</view>
+		<view class="order_bottom">
+			<view class="button">撥號</view>
+			<view class="button">取消</view>
+			<view class="button">接待</view>
+		</view>
+	</view>
+</view>

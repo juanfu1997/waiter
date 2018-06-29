@@ -1,0 +1,41 @@
+<import src="/dist/tabbar/index.wxml" />
+<view class="page">
+	<view class="bill_frame">
+		<image class="bill" src="{{img}}bill.png" mode="widthFix"></image>
+		<view class="bill_main">
+			<view class="bill_header">
+				<view class="bill_time">2018.03.23</view>
+				<view class="bill_crowd">用餐人數：2人</view>
+			</view>
+			<view class="bill_content">
+				<view class="bill_type">{{billTitle}}</view>
+				<text class="bill_number {{bill_numberState}}">2018-03-23\nA.M 11:30</text>
+				<view class="bill_state">
+					<view>{{bill_state.state1}}</view>
+					<view style="color:#f66341;" data-page="{{billStatePage}}" bindtap="goPage" >{{bill_state.state2}}</view>
+					<view>{{bill_state.state3}}</view>
+				</view>
+			</view>
+			<view class="bill_footer">
+				<view class="ranks_tips" wx:if="">
+					<view>您可以點擊下方按鈕看</view>
+					<view>餐廳特色</view>
+					<view>或</view>
+					<view>玩小遊戲</view>
+					<view>，時間很快就到，請您耐心等候叫號！</view>
+				</view>
+				<view class="appointment_tips">
+					<view class="">聯繫姓名：劉小姐</view>
+					<view class="">聯繫電話：130 7307 7169</view>
+				</view>
+			</view>
+		</view>
+	<text class="remarks" hidden="">{{remarks.ranks}}</text>
+
+	</view>
+
+	<view class="">
+		<!-- <view class=""></view> -->
+		<template is="tabbar" data="{{..._tabbar_}}"></template>
+	</view>
+</view>

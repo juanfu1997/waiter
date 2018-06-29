@@ -1,0 +1,216 @@
+@import "/dist/tabbar/index.wxss";
+page{
+	width: 100%;
+	height: 100%;
+	background-color: #fbf1e7;
+	font-size: 28rpx;
+	line-height: 1;
+}
+.tabbar .tab2{
+    flex-direction: row;
+    background: #e8be8e;
+    justify-content: center;
+    color: #8e6022;
+    border-radius: 20rpx;
+}
+.tabbar .tab2.active{
+
+}
+.tabbar .tab2:nth-child(1){
+	flex:0 0 10%;
+}
+.tabbar .tab2:nth-child(2){
+	flex:0 0 40%;
+
+}
+.tabbar .tab2:nth-child(3){
+	flex:0 0 40%;
+
+}
+
+.tabbar .tab
+/*.tabbar .tab2:after{
+	content: '';
+	position: absolute;
+	top: 2rpx;
+	right: -2rpx;
+	width: 4rpx;
+	height: 20%;
+	background-color: #fff;
+}
+.tabbar .tab2:before{
+	content: '';
+	position: absolute;
+	bottom: 2rpx;
+	left: -2rpx;
+	width: 4rpx;
+	height: 20%;
+	background-color: #fff;
+}*/
+
+
+.page{
+	width: 100%;
+	height: 100%;
+}
+.busDetail{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding:40rpx 0;
+	border-bottom: 2rpx solid #e4d8be;
+}
+.location{
+	width: 40rpx;
+	padding: 0 20rpx;
+}
+.busInfo{
+	width: 50%;
+	flex-grow: 1;
+}
+.busInfo .name{}
+.busInfo .address{
+	font-size: 24rpx;
+	line-height: 1;
+	color: #626262;
+}
+.backBusList{
+	width: 20rpx;
+}
+.ranksOrder, .appointmentOrder{
+	border-top:2rpx solid #e4d8be;
+	border-bottom:2rpx solid #e4d8be;
+	margin:20rpx 0;
+	font-size: 28rpx;
+	line-height: 1;
+	padding: 20rpx 0;
+}
+.ranksOrder{
+	display: flex;
+	align-items: center;
+}
+.crowdImg{
+	width: 40rpx;
+	padding: 0 20rpx;
+}
+.ranksCrowd{
+	display: flex;
+	align-items: center;
+	font-size: 28rpx;
+}
+.ranksCrowd input{
+	width: 150rpx;
+	border:2rpx solid #d3d3d3;
+	margin-right: 14rpx;
+	height:40rpx;
+}
+.ranksCrowd input.phone{
+	width: 260rpx;
+}
+.appointmentOrder{
+	display: flex;
+	flex-direction: column;
+}
+.appList{
+	display: flex;
+	margin-bottom: 20rpx;
+	align-items: center;
+}
+.appList:nth-last-child(1){
+	margin-bottom: 0;
+}
+.select{
+	display: flex;
+	align-items: center;
+	margin-right: 40rpx;
+}
+.select .selected{
+	width: 40rpx;
+}
+
+.remind_allow{
+	width: 100%;
+	border:2rpx solid #e4d8be;
+	padding: 20rpx 0; 
+	margin-bottom: 40rpx;
+}
+.allow_state{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.remind{
+	width: 40rpx;
+	margin: 0 20rpx;
+}
+.remindType{
+	/*width: 50%;*/
+	flex-grow: 1;
+}
+.switch{
+	position: relative;
+    margin: 0;
+	margin-right: 20rpx;
+    padding: 0;
+    border: none;
+    height: 46rpx;
+    width: 76rpx;
+    border-radius: 35rpx;
+    color: #6b7381;
+    background: #bdc1c8;
+}
+.switch.on{
+	background-color: #e8be8e;
+    transition: background-color 0.25s;
+}
+.switch .handle{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2rpx;
+    width: 42rpx;
+    height: 42rpx;
+    border-radius: 50%;
+    background: #fff;
+    transition: left .25s;
+}
+.switch.on .handle{
+	left: 32rpx;
+    transition: left .25s;
+}
+.remind_tips{
+	margin: 0 22rpx;
+	font-size: 24rpx;
+}
+.goRanks{
+	width: 100%;
+	padding: 30rpx 0;
+	background-color: #f66341;
+	font-size: 36rpx;
+	text-align: center;
+	color: #fff;
+}
+.footer{
+	width: 100%;
+	position:absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+}
+.cancel{
+	width: 30%;
+	background: #c4c4c4;
+	padding: 30rpx 0;
+	font-size: 36rpx;
+	text-align: center;
+	color: #fff;
+}
+.goAppointment{
+	width: 70%;
+	background-color: #f66341;
+	padding: 30rpx 0;
+	font-size: 36rpx;
+	text-align: center;
+	color: #fff;
+}

@@ -1,0 +1,20 @@
+<view class="page" hidden="">
+	<view class="tap">
+		<view catchtap="showType">分类</view>
+		
+	</view>
+	<view class="flex">
+		<view class="{{active}}" wx:for="{{tabList}}">{{item.value}}</view>
+	</view>
+	<view class="cartoonList">
+		<view class="coot" wx:for="{{cartoon}}">{{item.name}}</view>
+	</view>
+</view>
+<view class="page" hidden="1">
+	<scroll-view lazy-load="true"	>
+		<image style="width: 100%;" src="http://read.html5.qq.com/image?imageUrl=http://acy3.heibaimanhua.com/wp-content/uploads/2016/04/26/20160426_571f8723281f8.jpg&src=share" mode="widthFix"></image>
+		<image style="width: 100%;" src="http://read.html5.qq.com/image?imageUrl=http://acy3.heibaimanhua.com/wp-content/uploads/2016/04/26/20160426_571f8723281f8.jpg&src=share" mode="widthFix"></image>
+		<image style="width: 100%;" src="http://read.html5.qq.com/image?imageUrl=http://acy3.heibaimanhua.com/wp-content/uploads/2016/04/26/20160426_571f8723281f8.jpg&src=share" mode="widthFix"></image>
+	</scroll-view>
+	<view class=""></view>
+</view>

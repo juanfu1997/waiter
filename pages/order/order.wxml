@@ -1,0 +1,77 @@
+<import src="/dist/tabbar/index.wxml" />
+<view class="page">
+	<view class="busDetail">
+		<image class="location" src="{{img}}address.png" mode="widthFix"></image>
+		<view class="busInfo">
+			<view class="name">藝丁目</view>
+			<view class="address">廣州市天河區天河北路高科大廈B座</view>
+		</view>
+		<image class="backBusList" src="{{img}}arrow_right.png" mode="widthFix"></image>
+	</view>
+	<view class="ranksOrder" wx:if="{{order_type=='ranks'}}">
+		<image class="crowdImg" src="{{img}}crowd.png" mode="widthFix"></image>
+		<view class="ranksCrowd">
+			<view>用餐人數：</view>
+			<input style="text-align: center;" value="{{ranksCrowd}}" bindblur="ranksCrowdInput" />
+			<view>人</view>
+		</view>
+	</view>
+	<view class="appointmentOrder" wx:if="{{order_type=='appointment'}}">
+		<view class="appList">
+			<image class="crowdImg" src="{{img}}crowd.png" mode="widthFix"></image>
+			<view class="ranksCrowd">
+				<view>用餐人數：</view>
+				<input value="{{appCrowd}}" bindblur="appCrowdInput" />
+				<view>人</view>
+			</view>
+		</view>
+		<view class="appList">
+			<image class="crowdImg" src="{{img}}crowd.png" mode="widthFix"></image>
+			<view class="ranksCrowd">
+				<view>用餐時間：</view>
+				<input value="{{appTime}}" bindblur="appTimeInput" />
+				<view>人</view>
+			</view>
+		</view>
+		<view class="appList">
+			<image class="crowdImg" src="{{img}}crowd.png" mode="widthFix"></image>
+			<view class="ranksCrowd">
+				<view>聯繫姓名：</view>
+				<input value="{{appName}}" bindblur="appNameInput" />
+				<view class="select" data-id="0" bindtap="appSex">
+					<image class="selected" src="{{img}}{{appSex=='先生'? 'selected':'circular'}}.png" mode="widthFix"></image>
+					<view>先生</view>
+				</view>
+				<view class="select" data-id="1" bindtap="appSex">
+					<image class="selected" src="{{img}}{{appSex=='先生'? 'selected':'circular'}}.png" mode="widthFix"></image>
+					<view>女士</view>
+				</view>
+				
+			</view>
+		</view>
+		<view class="appList">
+			<image class="crowdImg" src="{{img}}crowd.png" mode="widthFix"></image>
+			<view class="ranksCrowd">
+				<view>聯繫電話：</view>
+				<input class="phone"  value="{{appPhone}}" maxlength="11" bindblur="appPhoneInput" />
+			</view>
+		</view>
+
+	</view>
+	<view class="remind_allow">
+		<view class="allow_state">
+			<image class="remind" src="{{img}}remind.png" mode="widthFix"></image>
+			<view class="remindType">{{remind.type}}</view>
+			<view class="switch {{switchStatus}}" bindtap="turnOnMessage">
+                <view class="handle"></view>
+            </view>
+		</view>
+		<view class="remind_tips">{{remind.tips}}</view>
+	</view>
+	<view class="goRanks" wx:if="{{order_type=='ranks'}}" data-page="orderDetails"  bindtap="getRanksNum">立即取號</view>
+	<template is="tabbar" data="{{..._tabbar_}}" wx:if="{{order_type=='ranks'}}"></template>
+	<view class="footer" wx:if="{{order_type=='appointment'}}">
+		<view class="cancel">取消</view>
+		<view class="goAppointment" data-page="orderDetails" bindtap="getappointment">立即預定</view>
+	</view>
+</view>

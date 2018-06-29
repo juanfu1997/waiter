@@ -1,0 +1,22 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/businessList/businessList",
+    "pages/order/order",
+    "pages/orderDetails/orderDetails",
+    "pages/orderList/orderList",
+    "pages/ranks/ranks",
+    "pages/appointment/appointment",
+    "pages/busDetail/busDetail",
+    "pages/waitGame/waitGame",
+    "pages/shortJokes/shortJokes",
+    "pages/cartoon/cartoon",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

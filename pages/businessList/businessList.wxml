@@ -1,0 +1,11 @@
+<!-- <import src="/dist/tabbar/index.wxml" />
+<template is="tabbar" data="{{..._tabbar_}}"></template> -->
+<view class="page" hidden="{{pageIndex==1}}">
+	<view class="header">請選擇您要用餐的門店</view>
+	<view class="busList">
+		<view class="li" wx:for="{{busList}}" data-id="{{item.id}}" data-param="{{'id='+item.id}}" data-page="order" bindtap="goPage">
+			<view class="busName">{{item.name}}</view>
+			<view class="li-bottom">{{item.address}}</view>
+		</view>
+	</view>
+</view>

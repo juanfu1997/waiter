@@ -1,0 +1,35 @@
+<import src="/dist/tabbar/index.wxml" />
+<template is="tabbar" data="{{..._tabbar_}}"></template>
+<view class="page">
+	<view class="slider">
+		<image class="slider" mode="widthFix" src="{{img}}store.jpg"></image>
+	</view>
+	<view class="storeInfo">
+		<view class="info" wx:for="{{storeInfo}}">
+			<image class="info_img" src="{{img}}{{item.img}}" mode="widthFix"></image>
+			<view class="info_txt">{{item.type}}{{item.txt}}</view>
+		</view>
+	</view>
+	<view class="Tabbar">
+		<view class="{{tab?'tab-actived':'tab'}}" data-id="0" bindtap="tab">关于我们</view>
+		<view class="{{!tab?'tab-actived':'tab'}}" data-id="1" bindtap="tab">特色推荐</view>
+	</view>
+	<view class="Tabbar_event">
+		<view class="aboutBus" hidden="{{tab}}">
+			1
+		</view>
+		<view class="busDetail" hidden="{{!tab}}">
+			2
+			<!-- <image wx:for="{{busDetail}}" src="{{img}}{{item.img}}" mode="widthFix" ></image> -->
+		</view>
+	</view>
+</view>
+<!-- <view class="page" hidden="{{pageIndex==1}}">
+	<view class="header">請選擇您要用餐的門店</view>
+	<view class="busList">
+		<view class="li" wx:for="{{busList}}" bindtap="getBusDetail">
+			<view class="busName">{{item.name}}</view>
+			<view class="li-bottom">{{item.add}}</view>
+		</view>
+	</view>
+</view> -->

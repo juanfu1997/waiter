@@ -1,0 +1,17 @@
+<import src="/dist/tabbar/index.wxml" />
+<view class="page">
+	<view class="tap">
+		<view class="label">顧客號碼</view>
+		<view class="label">用餐人數</view>
+		<view class="label">狀態管理</view>
+	</view>
+	<view class="content" wx:for="{{ranksList}}">
+		<view class="label">A001</view>
+		<view class="label">2人</view>
+		<view class="label">
+			<view class="li">過號</view>
+			<view class="li">接待</view>
+		</view>
+	</view>
+</view>
+<template is="tabbar" data="{{..._tabbar_}}"></template>
